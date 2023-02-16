@@ -5,4 +5,6 @@ if (!rootElement) {
     throw new Error('No root element found with id "app"')
 }
 
-rootElement.replaceWith(PocketApp)
+export const pocketApp = new PocketApp()
+
+rootElement.replaceWith(pocketApp.el)
